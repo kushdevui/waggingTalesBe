@@ -1,0 +1,41 @@
+{
+  "name": "wagging-tales-be",
+  "version": "1.0.0",
+  "description": "Apis for wagging Tales ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushdevui/waggingTalesBe.git"
+  },
+  "author": "kush",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "aws-sdk": "^2.822.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-validator": "^6.4.0",
+    "firebase-admin": "^8.13.0",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.2",
+    "mongoose-sequence": "^5.3.1",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "path": "^0.12.7",
+    "razorpay": "^2.8.1",
+    "shortid": "^2.2.16"
+  }
+}
