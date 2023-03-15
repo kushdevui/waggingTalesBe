@@ -33,6 +33,7 @@ class Controller {
         try {
             const data = req.body;
             let user = await UserDal.getOne({ email: data.email })
+            console.log("user", user)
             if(_.isEmpty(user)){
                 return res.status(401).json({
                     status:"failure",
@@ -48,7 +49,7 @@ class Controller {
             }
             return res.status(200).json({
                 status:"success",
-                message:"Successfully loggedIn"
+                data: user.toAuthJSON()
             })
 
         } catch (error) {

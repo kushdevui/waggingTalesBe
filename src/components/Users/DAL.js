@@ -10,6 +10,7 @@ class DAL {
     async getOne(filter) {
         return await UserModel.findOne(filter);
     }
+    
     async insert(data) {
         const user = new UserModel(data);
         return user.save();

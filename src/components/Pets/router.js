@@ -40,5 +40,7 @@ router.post('/', [
         .isEmpty()
         .withMessage("basic remarks is required")
 ], validator, PetController.insert)
-
+router.patch("/:id",PetController.update);
+router.get("/",PetController.getAll);
+router.delete("/:id",PetController.delete)
 module.exports = router;
